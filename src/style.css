@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-very-light-gray {
+    background-color: hsl(0, 0%, 98%);
+  }
+
+  .text-dark-gray {
+    color: hsl(0, 0%, 52%);
+  }
+
+  .text-very-dark-blue {
+    color: hsl(200, 15%, 8%);
+  }
+
+  .bg-very-dark-blue {
+    background-color: hsl(207, 26%, 17%);
+  }
+
+  .text-dark-blue {
+    color: hsl(209, 23%, 22%);
+  }
+
+  .bg-dark-blue {
+    background-color: hsl(209, 23%, 22%);
+  }
+
+  .border-dark-blue {
+    border-color: hsl(209, 23%, 22%);
+  }
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  @apply bg-very-light-gray dark:bg-very-dark-blue;
+}
+
+/* - Dark Blue (Dark Mode Elements): hsl(209, 23%, 22%)
+- Very Dark Blue (Dark Mode Background): hsl(207, 26%, 17%)
+- Very Dark Blue (Light Mode Text): hsl(200, 15%, 8%)
+- Dark Gray (Light Mode Input): hsl(0, 0%, 52%)
+- Very Light Gray (Light Mode Background): hsl(0, 0%, 98%)*/
